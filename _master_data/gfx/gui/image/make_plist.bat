@@ -8,7 +8,6 @@ echo *******  export plist  *********
 echo ********************************
 
 call %TOOL% shengmu --data ..\Resources\plist\shengmu.plist --sheet ..\Resources\plist\shengmu.png --format cocos2d --size-constraints AnySize
-call %TOOL% mainmenu --data ..\Resources\plist\mainmenu.plist --sheet ..\Resources\plist\mainmenu.png --format cocos2d --size-constraints AnySize
 call %TOOL% gamepad --data ..\Resources\plist\gamepad.plist --sheet ..\Resources\plist\gamepad.png --format cocos2d --size-constraints AnySize
 call %TOOL% public --data ..\Resources\plist\public.plist --sheet ..\Resources\plist\public.png --format cocos2d --size-constraints AnySize
 xcopy /y /s fntFont ..\Resources\fonts
