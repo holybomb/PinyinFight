@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="wxSqlite3">
+      <UniqueIdentifier>{e5a48555-cf26-48c4-aa14-0143e4a2e7ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRijndael">
+      <UniqueIdentifier>{351efe3a-f809-4465-a191-56b39b3d5ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{d94fff77-94e3-4ba0-a780-2a23b82a7bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\base64">
+      <UniqueIdentifier>{2e33aa80-8962-4a35-80b5-e82e1c1a242c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\md5">
+      <UniqueIdentifier>{3df8c0e7-6f1f-48af-9595-aca15717d34f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\sha1">
+      <UniqueIdentifier>{a99bd2ec-21fe-499d-90ff-ed38f4865704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\xxtea">
+      <UniqueIdentifier>{13646f6a-abd8-4876-a6a1-13accea150e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\wxSqlite3\sqlite3.h">
+      <Filter>wxSqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRijndael\CRijndael.h">
+      <Filter>CRijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="..\crypto\CCCrypto.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\crypto\base64\libb64.h">
+      <Filter>crypto\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\crypto\md5\md5.h">
+      <Filter>crypto\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\crypto\sha1\sha1.h">
+      <Filter>crypto\sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\crypto\xxtea\xxtea.h">
+      <Filter>crypto\xxtea</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CRijndael\CRijndael_Utils.h">
+      <Filter>CRijndael</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\wxSqlite3\sqlite3secure.c">
+      <Filter>wxSqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRijndael\CRijndael.cpp">
+      <Filter>CRijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRijndael\Test.cpp">
+      <Filter>CRijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\CCCrypto.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\base64\libb64.c">
+      <Filter>crypto\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\md5\md5.c">
+      <Filter>crypto\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\sha1\sha1.cpp">
+      <Filter>crypto\sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\xxtea\xxtea.c">
+      <Filter>crypto\xxtea</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CRijndael\CRijndael_Utils.cpp">
+      <Filter>CRijndael</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

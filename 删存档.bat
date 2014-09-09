@@ -1,0 +1,1 @@
+del %cd%\Debug.win32\UserDefault.xml -s -q

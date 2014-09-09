@@ -1,0 +1,23 @@
+@echo off
+
+ECHO *************************************************
+ECHO *                                               *
+ECHO *           复制数据库文件到对应目录            *    
+ECHO *                                               *
+
+
+ECHO *               开始复制DB文件                  *
+xcopy .\db\*.db ..\..\projectHunter\Resources\db /y >>nul
+
+ECHO *              开始复制CPP文件                  *
+xcopy .\cpp\*.cpp ..\..\projectHunter\Classes\Database\base /y >>nul
+
+ECHO *               开始复制H文件                   *
+xcopy .\cpp\*.h ..\..\projectHunter\Classes\Database\base /y >>nul
+
+ECHO *              开始删除缓存数据                 *
+del ..\..\Debug.win32\*.db  >>nul 2>>nul
+
+ECHO *************************************************
+
+pause

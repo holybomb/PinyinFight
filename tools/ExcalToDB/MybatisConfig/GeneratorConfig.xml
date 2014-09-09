@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <classPathEntry location="mysql-connector-java-5.1.13-bin.jar"/>
+  <!-- targetRuntime：代码生成目标，默认是MyBatis3，可以是Ibatis2Java2或者Ibatis2Java5。生成对象兼容MyBatis版本3.0和更高版本,和JSE 5.0和更高版本 -->
+  <!-- defaultModelType：用来定义生成模型类型策略。
+	1.conditional 默认策略，为每个表生成一个Model class；
+	2.flat:将所有的表中生成一个Model class，即这个类将保存所有表中字段；
+	3.hierarchical ：如果表有一个主键，该模型将生成一个主键类,另一个类,用于容纳任何BLOB列在表中,和另一个类,用于容纳其余的字段。这个是一个适当的继承类之间的关系 
+	-->
+  <context id="AreaTables" targetRuntime="MyBatis3">
+    <property name="beginningDelimiter" value="`"/>
+    <property name="endingDelimiter" value="`"/>
+    <property name="autoDelimitKeywords" value="true"/>
+    <!-- 这里引入扩展插件 -->
+    <plugin type="com.mybatis.common.plugin.PaginationPlugin"/>
+    <commentGenerator>
+      <property name="suppressDate" value="true"/>
+      <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+      <property name="suppressAllComments" value="true"/>
+    </commentGenerator>
+    <!-- 数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.141.89:3306/huntergame" userId="root" password="xuyuanming"/>
+    <javaTypeResolver>
+      <!-- 只有一个属于forceBigDecimals，默认false。如果字段精确超过0，生成BigDecimal 如果字段精确是0，总长度10-18生成Long; 如果字段精确是0，总长5-9生成Integer; 如果字段精确是0，总长小于5生成Short; 如果forceBigDecimals为true,统一生成BigDecimal -->
+      <property name="forceBigDecimals" value="false"/>
+    </javaTypeResolver>
+    <!-- Model生成配置 targetPackage：生成包路径，自动生成目录。targetProject：项目路经，可以绝对路径或者相对路径。 -->
+    <javaModelGenerator targetPackage="com.gc.game.dao.model" targetProject="src">
+      <property name="enableSubPackages" value="true"/>
+      <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+    <!-- sqlMap配置 -->
+    <sqlMapGenerator targetPackage="com.gc.game.dao.xml" targetProject="src">
+      <property name="enableSubPackages" value="true"/>
+    </sqlMapGenerator>
+    <!-- DAO接口的生成 -->
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.gc.game.dao.sqlmapper" targetProject="src">
+      <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+    <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名，如果未指定自动基于表名生成 -->
+    <!-- table其他属性：enableCountByExample="false"；enableUpdateByExample="false"；enableDeleteByExample="false"；enableSelectByExample="false"；selectByExampleQueryId="false"；schema即为数据库名, tableName为对应的数据库表, domainObjectName是要生成的实体类 -->
+    <!--
+		忽略字段
+        <ignoreColumn column="columnName" />
+		
+		无论字段是什么类型，生成的类属性都是varchar 
+		<columnOverride column="columnName" jdbcType="VARCHAR" />
+
+		修改数据库列名映射的javabean属性名
+		<columnOverride column="oldColumnName" property="propertyName" />
+
+		主键生成 如果用了这个 generatedKey ,MBG将在sqlmpper.xml里生成一个 selectKey元素在用在<insert>元素里 。
+		<generatedKey column="columnName" sqlStatement="JDBC" identity="true" />
+        <generatedKey column="ID" sqlStatement="MySql" identity="true" />
+		
+		javabean继承的父类
+		<property name="rootClass" value="com.xxx.commons.entity.IdEntity"/>
+
+		<property name="useActualColumnNames" value="true"/>
+	-->
+    <table tableName="d_zixia_beidong" domainObjectName="DZixiaBeidong"/>
+    <table tableName="d_neidan" domainObjectName="DNeidan"/>
+    <table tableName="d_guild_skill" domainObjectName="DGuildSkill"/>
+    <table tableName="d_guild_setting" domainObjectName="DGuildSetting"/>
+    <table tableName="d_npc" domainObjectName="DNpc"/>
+    <table tableName="d_dungeon" domainObjectName="DDungeon"/>
+    <table tableName="d_shop" domainObjectName="DShop"/>
+    <table tableName="d_equip" domainObjectName="DEquip"/>
+    <table tableName="d_drug" domainObjectName="DDrug"/>
+    <table tableName="d_material" domainObjectName="DMaterial"/>
+    <table tableName="d_treasure" domainObjectName="DTreasure"/>
+    <table tableName="d_formulation" domainObjectName="DFormulation"/>
+    <table tableName="d_gem" domainObjectName="DGem"/>
+    <table tableName="d_gua" domainObjectName="DGua"/>
+    <table tableName="d_resourceconsume" domainObjectName="DResourceConsume"/>
+    <table tableName="d_vip_setting" domainObjectName="DVIPSetting"/>
+    <table tableName="d_gua_setting" domainObjectName="DGuaSetting"/>
+    <table tableName="d_system_setting" domainObjectName="DSystemSetting">
+      <property name="useActualColumnNames" value="true"/>
+    </table>
+    <table tableName="d_level" domainObjectName="DLevel"/>
+    <table tableName="d_attribute_ratio" domainObjectName="DAttributeRatio"/>
+    <table tableName="d_warrior" domainObjectName="DWarrior"/>
+    <table tableName="d_assassin" domainObjectName="DAssassin"/>
+    <table tableName="d_wizard" domainObjectName="DWizard"/>
+    <table tableName="t_guild" domainObjectName="TGuild">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_guild_player" domainObjectName="TGuildPlayer"/>
+    <table tableName="t_pack" domainObjectName="TPack">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_pack_gem" domainObjectName="TPackGem">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_pack_gua" domainObjectName="TPackGua">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_player" domainObjectName="TPlayer">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_body_equip" domainObjectName="TBodyEquip">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_body_gua" domainObjectName="TBodyGua">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_attribute_revise" domainObjectName="TAttributeRevise">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_body_neidan" domainObjectName="TBodyNeidan">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="t_finish_dungeon" domainObjectName="TFinishDungeon">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="log_item_change" domainObjectName="LogItemChange"/>
+    <table tableName="d_quest" domainObjectName="DQuest"/>
+    <table tableName="d_shop_goods" domainObjectName="DShopGoods"/>
+    <table tableName="t_shop_stock" domainObjectName="TShopStock">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="d_monster" domainObjectName="DMonster"/>
+    <table tableName="t_save_quest" domainObjectName="TSaveQuest">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="d_dungeon_drop" domainObjectName="DDungeonDrop"/>
+    <table tableName="t_temp_gua" domainObjectName="TTempGua"/>
+    <table tableName="relationship" domainObjectName="TRelationship">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="log_chat" domainObjectName="LogChat"/>
+    <table tableName="d_player_skill" domainObjectName="DPlayerSkill">
+      <property name="useActualColumnNames" value="true"/>
+    </table>
+    <table tableName="d_monster_skill" domainObjectName="DMonsterSkill">
+      <property name="useActualColumnNames" value="true"/>
+    </table>
+    <table tableName="d_map" domainObjectName="DMap"/>
+    <table tableName="d_hero_actor" domainObjectName="DHeroActor"/>
+    <table tableName="t_guild_msg" domainObjectName="TGuildMsg"/>
+    <table tableName="d_monster_resource" domainObjectName="DMonsterResource"/>
+    <table tableName="d_neidan_add" domainObjectName="DNeidanAdd"/>
+    <table tableName="t_player_skill" domainObjectName="TPlayerSkill">
+      <generatedKey column="ID" sqlStatement="MySql" identity="true"/>
+    </table>
+    <table tableName="d_hero_state" domainObjectName="DHeroState"/>
+    <table tableName="d_enemy_state" domainObjectName="DEnemyState"/>
+    <table tableName="d_skill" domainObjectName="DSkill"/>
+    <table tableName="d_boss" domainObjectName="DBoss"/>
+    <table tableName="d_enemy_throw_state" domainObjectName="DEnemyThrowState"/>
+    <table tableName="d_enemy_boss_state" domainObjectName="DEnemyBossState"/>
+    <table tableName="d_enemy_fly_state" domainObjectName="DEnemyFlyState"/>
+    <table tableName="d_enemy_tianjiang_state" domainObjectName="DEnemyTianjiangState"/>
+    <table tableName="d_enemy_guitou_state" domainObjectName="DEnemyGuitouState"/>
+    <table tableName="d_enemy_gear_state" domainObjectName="DEnemyGearState"/>
+    <table tableName="d_bullet" domainObjectName="DBullet"/>
+    <table tableName="t_pack_material" domainObjectName="TPackMaterial"/>
+    <table tableName="d_formula" domainObjectName="DFormula"/>
+    <table tableName="d_monster_data_public" domainObjectName="DMonsterDataPublic"/>
+    <table tableName="d_monster_data" domainObjectName="DMonsterData"/>
+  </context>
+</generatorConfiguration>

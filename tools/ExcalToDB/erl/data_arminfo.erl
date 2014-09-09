@@ -1,0 +1,159 @@
+%%%----------------------------------- 
+%%% @Module  : data_arminfo 
+%%% @Author  : YANG.JIN 
+%%% @Email   : 84959751@qq.com 
+%%% @Created : 2013-9-2 15:59:26 
+%%% @Description: 自动生成 
+%%%----------------------------------- 
+-module(data_arminfo). 
+-export([get/1]). 
+-include("record.hrl"). 
+ 
+get(10101)-> 
+#data_arminfo{ 
+	id=10101,sname="守护战斧",icon="big_datubiao_24",description="小斧斧随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=60,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=15,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=6,dn_step=0,am_step=0,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10102)-> 
+#data_arminfo{ 
+	id=10102,sname="守护头盔",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=19,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=2,as_step=0,ds_step=0 
+}; 
+get(10103)-> 
+#data_arminfo{ 
+	id=10103,sname="守护战铠",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=33,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=5,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10104)-> 
+#data_arminfo{ 
+	id=10104,sname="守护战靴",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=30,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=4 
+}; 
+get(10105)-> 
+#data_arminfo{ 
+	id=10105,sname="守护项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=54,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=12,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10106)-> 
+#data_arminfo{ 
+	id=10106,sname="守护戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=20,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10121)-> 
+#data_arminfo{ 
+	id=10121,sname="守护长剑",icon="big_datubiao_24",description="小剑剑随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=70,defensemagic=0,attackskill=20,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=8,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10122)-> 
+#data_arminfo{ 
+	id=10122,sname="守护头巾",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=30,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=4,as_step=0,ds_step=0 
+}; 
+get(10123)-> 
+#data_arminfo{ 
+	id=10123,sname="守护法袍",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=22,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=3,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10124)-> 
+#data_arminfo{ 
+	id=10124,sname="守护云履",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=30,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=4 
+}; 
+get(10125)-> 
+#data_arminfo{ 
+	id=10125,sname="守护项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=54,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=12,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10126)-> 
+#data_arminfo{ 
+	id=10126,sname="守护戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=20,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10141)-> 
+#data_arminfo{ 
+	id=10141,sname="守护长棍",icon="big_datubiao_24",description="小棍棍随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=65,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=17,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=7,dn_step=0,am_step=0,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10142)-> 
+#data_arminfo{ 
+	id=10142,sname="守护头冠",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=24,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=3,as_step=0,ds_step=0 
+}; 
+get(10143)-> 
+#data_arminfo{ 
+	id=10143,sname="守护战甲",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=27,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=4,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10144)-> 
+#data_arminfo{ 
+	id=10144,sname="守护短靴",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=30,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=4 
+}; 
+get(10145)-> 
+#data_arminfo{ 
+	id=10145,sname="守护项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=54,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=12,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10146)-> 
+#data_arminfo{ 
+	id=10146,sname="守护戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=20,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=3,ds_step=0 
+}; 
+get(10201)-> 
+#data_arminfo{ 
+	id=10201,sname="信仰战斧",icon="big_datubiao_24",description="小斧斧随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=100,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=31,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=14,dn_step=0,am_step=0,dm_step=0,as_step=5,ds_step=0 
+}; 
+get(10202)-> 
+#data_arminfo{ 
+	id=10202,sname="信仰头盔",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=42,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=7,as_step=0,ds_step=0 
+}; 
+get(10203)-> 
+#data_arminfo{ 
+	id=10203,sname="信仰战铠",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=57,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=10,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10204)-> 
+#data_arminfo{ 
+	id=10204,sname="信仰战靴",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=57,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=9 
+}; 
+get(10205)-> 
+#data_arminfo{ 
+	id=10205,sname="信仰项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=157,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=26,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10206)-> 
+#data_arminfo{ 
+	id=10206,sname="信仰戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=1,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=68,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=11,ds_step=0 
+}; 
+get(10221)-> 
+#data_arminfo{ 
+	id=10221,sname="信仰长剑",icon="big_datubiao_24",description="小剑剑随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=110,defensemagic=0,attackskill=34,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=17,dm_step=0,as_step=6,ds_step=0 
+}; 
+get(10222)-> 
+#data_arminfo{ 
+	id=10222,sname="信仰头巾",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=53,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=9,as_step=0,ds_step=0 
+}; 
+get(10223)-> 
+#data_arminfo{ 
+	id=10223,sname="信仰法袍",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=47,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=8,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10224)-> 
+#data_arminfo{ 
+	id=10224,sname="信仰云履",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=57,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=9 
+}; 
+get(10225)-> 
+#data_arminfo{ 
+	id=10225,sname="信仰项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=157,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=26,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10226)-> 
+#data_arminfo{ 
+	id=10226,sname="信仰戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=2,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=68,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=11,ds_step=0 
+}; 
+get(10241)-> 
+#data_arminfo{ 
+	id=10241,sname="信仰长棍",icon="big_datubiao_24",description="小棍棍随便写",subtype=1,issell=0,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=100,yuanbaoprice=200,zhangongprice=0,rongyuprice=0,sellprice=5,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=105,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=32,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=15,dn_step=0,am_step=0,dm_step=0,as_step=5,ds_step=0 
+}; 
+get(10242)-> 
+#data_arminfo{ 
+	id=10242,sname="信仰头冠",icon="big_datubiao_31",description="小猫猫随便写",subtype=2,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=47,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=7,as_step=0,ds_step=0 
+}; 
+get(10243)-> 
+#data_arminfo{ 
+	id=10243,sname="信仰战甲",icon="big_datubiao_33",description="小衣衣随便写",subtype=3,issell=1,isincrease=1,usearea=1,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=53,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=9,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10244)-> 
+#data_arminfo{ 
+	id=10244,sname="信仰短靴",icon="big_datubiao_57",description="小靴靴随便写",subtype=4,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=57,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=9 
+}; 
+get(10245)-> 
+#data_arminfo{ 
+	id=10245,sname="信仰项链",icon="big_datubiao_38",description="小链链随便写",subtype=5,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=157,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=0,defenseskill=0,hitrate=0,crit=0,hp_step=26,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=0,ds_step=0 
+}; 
+get(10246)-> 
+#data_arminfo{ 
+	id=10246,sname="信仰戒指",icon="big_datubiao_47",description="小腕腕随便写",subtype=6,issell=1,isincrease=1,usearea=0,quality=1,joblimit=3,minlevellimit=1,maxlevellimit=0,goldprice=200,yuanbaoprice=20,zhangongprice=0,rongyuprice=0,sellprice=10,gemslot=0,hp=0,mp=0,strength=0,intelligence=0,stunt=0,attacknormal=0,defensenormal=0,attackmagic=0,defensemagic=0,attackskill=68,defenseskill=0,hitrate=0,crit=0,hp_step=0,an_step=0,dn_step=0,am_step=0,dm_step=0,as_step=11,ds_step=0 
+}; 
+ 
+ 
+get(_Id) -> 
+[]. 

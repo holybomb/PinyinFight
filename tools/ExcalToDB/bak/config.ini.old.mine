@@ -1,0 +1,1183 @@
+﻿[actorState]
+sheetFiles = ..\..\策划表单\《西游》角色状态转换表.xls
+binFiles = ..\..\projectHunter\Resources\actor\sl.bin
+iStateFiles = ..\..\projectHunter\Classes\Actor\iState.h
+StateFilesRoot = ..\..\projectHunter\Classes\Actor
+
+[怪属性表_(服务器&客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》怪属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 怪属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_monster
+#导出的DB文件名字
+dbName = ms.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_MonsterProperty
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DMonster
+
+[主角属性_(客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = hr_property
+#导出的DB文件名字
+dbName = hr.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_heroProperty
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[技能总表_主动技能_(服务器&客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》技能总表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 3
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角主动技能,普通敌人技能
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_skill_player,d_skill_monster
+#导出的DB文件名字
+dbName = sk.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_ActorSkill
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+JavaBeanName = DSkillPlayer,DSkillMonster
+
+[技能总表_主角主动技能_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》技能总表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 3
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角主动技能
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_skill_player
+#导出的DB文件名字
+dbName = sk.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_ActorSkill
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DSkillPlayer
+
+[技能总表_普通敌人技能_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》技能总表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 3
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 普通敌人技能
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_skill_monster
+#导出的DB文件名字
+dbName = sk.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_ActorSkill
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DSkillMonster
+
+
+[环境属性_(客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》游戏环境配置表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 场景内环境属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = environment
+#导出的DB文件名字
+dbName = ev.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_Environment
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[测试用的角色职业属性_(客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#是否导出json文件，如果不写就不会导出
+binFiles = ..\..\projectHunter\Resources\actor\ac.bin
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 战士属性,道士属性,法师属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = zssx,dssx,fssx
+#导出的DB文件名字
+dbName = ac.db
+#导出类的名字，不要跟其他的名字重复
+model = XGameActor
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[地图信息_(客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》地图.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = map
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = gamemap
+#导出的DB文件名字
+dbName = gamemap.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_gamemap
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[系统提示_(客户端)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》系统提示.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 系统提示
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = tipmsg
+#导出的DB文件名字
+dbName = tipmsg.db
+#导出类的名字，不要跟其他的名字重复
+model = XTipMsg
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[文本_客户端]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》文本.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = All_Text
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = stext
+#导出的DB文件名字
+dbName = text.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_Text
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#导出文本
+exportText	 = true
+
+[换装_客户端]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》主角换装表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角装备
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = equipmentPart
+#导出的DB文件名字
+dbName = heroPart.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_Part
+#是否导出到数据库
+exportServer = false
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+
+[数据字典-紫霞被动技能(服务器&客户端)-(d_zixia_beidong)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》技能总表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 3
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 紫霞被动
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_zixia_beidong
+#导出的DB文件名字
+dbName = sk_BD.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_ActorSk_Pv
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DZixiaBeidong
+
+[数据字典-内丹(服务器&客户端)-(d_neidan)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》内丹数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 内丹信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_neidan
+#导出的DB文件名字
+dbName = jingmai.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_JingMai
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DNeidan
+
+[数据字典-帮派技能(服务器&客户端)-(d_guild_skill)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》技能总表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 3
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 宗派被动
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_guild_skill
+#导出的DB文件名字
+dbName = guildskill.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_GuildSkill
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DGuildSkill
+
+[数据字典-工会等级设置(服务器&客户端)-(d_guild_setting)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》工会设定.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 级别设置
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_guild_setting
+#导出的DB文件名字
+dbName = guildset.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_guildset
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DGuildSetting
+
+[数据字典-任务(服务器&客户端)-(d_quest)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》任务.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = quest
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_quest
+#导出的DB文件名字
+dbName = gamequest.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_gamequest
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DQuest
+
+[数据字典-NPC(服务器&客户端)-(d_npc)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》任务.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = npc
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_npc
+#导出的DB文件名字
+dbName = gamenpc.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_gamenpc
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DNpc
+
+[数据字典-副本(服务器&客户端)-(d_dungeon)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》副本.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = map
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_dungeon
+#导出的DB文件名字
+dbName = dungeon.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_dungeon
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DDungeon
+
+[数据字典-商店(服务器&客户端)-(d_shop)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》商城.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 商店
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_shop
+#导出的DB文件名字
+dbName = itemshop.db
+#导出类的名字，不要跟其他的名字重复
+model = XItemShop
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DShop
+
+[数据字典-商店贩卖道具(服务器&客户端)-(d_shop_goods)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》商城.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 商店贩卖物品
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_shop_goods
+#导出的DB文件名字
+dbName = shop_goods.db
+#导出类的名字，不要跟其他的名字重复
+model = XShopGoods
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DShopGoods
+
+[数据字典-装备(服务器&客户端)-(d_equip)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 装备道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_equip
+#导出的DB文件名字
+dbName = arminfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XArmInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DEquip
+
+[数据字典-道具(服务器&客户端)-(d_drug)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 使用道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_drug
+#导出的DB文件名字
+dbName = druginfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XDrugInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DDrug
+
+[数据字典-材料(服务器&客户端)-(d_material)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 材料道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_material
+#导出的DB文件名字
+dbName = material.db
+#导出类的名字，不要跟其他的名字重复
+model = XMaterial
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DMaterial
+
+[数据字典-宝箱(服务器&客户端)-(d_treasure)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 宝箱道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_treasure
+#导出的DB文件名字
+dbName = treasure.db
+#导出类的名字，不要跟其他的名字重复
+model = XTreasure
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DTreasure
+
+[数据字典-图纸(服务器&客户端)-(d_formulation)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 图纸道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_formulation
+#导出的DB文件名字
+dbName = formulation.db
+#导出类的名字，不要跟其他的名字重复
+model = XFormulation
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DFormulation
+
+[数据字典-灵石(服务器&客户端)-(d_gem)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 灵石道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_gem
+#导出的DB文件名字
+dbName = gem.db
+#导出类的名字，不要跟其他的名字重复
+model = XGem
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DGem
+
+[数据字典-卦象(服务器&客户端)-(d_gua)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》道具表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 练卦道具
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_gua
+#导出的DB文件名字
+dbName = guainfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XGuaInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DGua
+
+[数据字典-系统消耗(服务器&客户端)-(d_resourceconsume)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》系统消耗资源表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 装备强化
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_resourceconsume
+#导出的DB文件名字
+dbName = resourceConsume.db
+#导出类的名字，不要跟其他的名字重复
+model = XResourceConsume
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DResourceConsume
+
+[数据字典-VIP设定(服务器&客户端)-(d_vip_setting)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》系统消耗资源表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = VIP等级属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_vip_setting
+#导出的DB文件名字
+dbName = vipsetting.db
+#导出类的名字，不要跟其他的名字重复
+model = XVIPSetting
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DVIPSetting
+
+[数据字典-练卦设定(服务器&客户端)-(d_gua_setting)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》练卦.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 练卦
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_gua_setting
+#导出的DB文件名字
+dbName = guasetting.db
+#导出类的名字，不要跟其他的名字重复
+model = XGuaSetting
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DGuaSetting
+
+[数据字典-策划系数(服务器&客户端)-(d_system_setting)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 策划系数
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_system_setting
+#导出的DB文件名字
+dbName = xishusetting.db
+#导出类的名字，不要跟其他的名字重复
+model = XXiShuSetting
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DSystemSetting
+
+[数据字典-经验值表(服务器&客户端)-(d_level)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 升级经验
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_level
+#导出的DB文件名字
+dbName = levelinfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XLevelinfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = true
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DLevel
+
+[数据字典-战斗力系数(服务器)-(d_attribute_ratio)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 战斗力系数
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_attribute_ratio
+#导出的DB文件名字
+dbName = setcombat.db
+#导出类的名字，不要跟其他的名字重复
+model = XSetcombat
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DAttributeRatio
+
+[数据字典-战士属性(服务器)-(d_warrior)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 战士属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_warrior
+#导出的DB文件名字
+dbName = d_warrior.db
+#导出类的名字，不要跟其他的名字重复
+model = XWarriorinfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DWarrior
+
+[数据字典-刺客属性(服务器)-(d_assassin)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 刺客属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_assassin
+#导出的DB文件名字
+dbName = d_assassin.db
+#导出类的名字，不要跟其他的名字重复
+model = XAssassinInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DAssassin
+
+[数据字典-法师属性(服务器)-(d_wizard)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 法师属性
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = d_wizard
+#导出的DB文件名字
+dbName = d_wizard.db
+#导出类的名字，不要跟其他的名字重复
+model = XWizardInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = DWizard
+
+[服务器_状态转换表_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色状态转换表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = herostate
+#导出的DB文件名字
+dbName = herostate.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_herostate
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = true
+#JavaBean文件的名字
+JavaBeanName = XHeroState
+
+[服务器_角色属性heroactor_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》角色属性.xls
+#关键字行，从上往下数，从0开始
+keyRow = 1
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 主角
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = heroactor
+#导出的DB文件名字
+dbName = heroactor.db
+#导出类的名字，不要跟其他的名字重复
+model = heroactor
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = XHeroActor
+
+[数据结构-帮派(服务器)-(t_guild)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 帮会信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_guild
+#导出的DB文件名字
+dbName = guildinfo.db
+#导出类的名字，不要跟其他的名字重复
+model = guildinfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TGuild
+
+[数据结构-帮派人员(服务器)-(t_guild_player)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 帮派人员关系表
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_guild_player
+#导出的DB文件名字
+dbName = guildplayer.db
+#导出类的名字，不要跟其他的名字重复
+model = guildplayer
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TGuildPlayer
+
+[服务器_玩家消息格式_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 玩家消息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = msgpool
+#导出的DB文件名字
+dbName = msgpool.db
+#导出类的名字，不要跟其他的名字重复
+model = msgpool
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = XMessage
+
+[服务器_工会消息格式_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 帮派消息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = guildmsg
+#导出的DB文件名字
+dbName = guildmsg.db
+#导出类的名字，不要跟其他的名字重复
+model = guildmsg
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = XGuildMsg
+
+[数据结构-背包(服务器)-(t_pack)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 背包信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_pack
+#导出的DB文件名字
+dbName = packinfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XPackInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TPack
+
+[数据结构-宝石背包(服务器)-(t_pack_gem)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 宝石背包信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_pack_gem
+#导出的DB文件名字
+dbName = gempackinfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XGemPackInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TPackGem
+
+[数据结构-卦背包(服务器)-(t_pack_gua)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 卦背包
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_pack_gua
+#导出的DB文件名字
+dbName = guapackinfo.db
+#导出类的名字，不要跟其他的名字重复
+model = XGuaPackInfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TPackGua
+
+[数据结构-玩家属性(服务器)-(t_player)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 角色信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_player
+#导出的DB文件名字
+dbName = t_player_info.db
+#导出类的名字，不要跟其他的名字重复
+model = XPlayerinfo
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TPlayer
+
+[数据结构-身上装备(服务器)-(t_body_equip)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 身上装备信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_body_equip
+#导出的DB文件名字
+dbName = t_body_equip.db
+#导出类的名字，不要跟其他的名字重复
+model = XPlayerEquip
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TBodyEquip
+
+[数据结构-身上卦象信息(服务器)-(t_body_gua)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 身上卦象信息
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_body_gua
+#导出的DB文件名字
+dbName = t_body_gua.db
+#导出类的名字，不要跟其他的名字重复
+model = XPlayerGua
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TBodyGua
+
+[数据结构-角色上限提升(服务器)-(t_attribute_revise)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 角色信息_上限提升
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_attribute_revise
+#导出的DB文件名字
+dbName = t_attribute_revise.db
+#导出类的名字，不要跟其他的名字重复
+model = XPlayerRevise
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TAttributeRevise
+
+[数据结构-身上内丹(服务器)-(t_body_neidan)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 角色信息_上限提升
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_body_neidan
+#导出的DB文件名字
+dbName = t_body_neidan.db
+#导出类的名字，不要跟其他的名字重复
+model = XPlayerNeidan
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TBodyNeidan
+
+[数据结构-已通关副本(服务器)-(t_finish_dungeon)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 玩家副本表
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_finish_dungeon
+#导出的DB文件名字
+dbName = t_finish_dungeon.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_PlayerDungeon
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TFinishDungeon
+
+[数据结构-商店道具库存(服务器)-(t_shop_stock)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 商店道具库存
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = t_shop_stock
+#导出的DB文件名字
+dbName = t_shop_stock.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_Shop_Stock
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = TShopStock
+
+[玩家关系表_(服务器)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器数据表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 玩家关系表
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = relationship
+#导出的DB文件名字
+dbName = relationship.db
+#导出类的名字，不要跟其他的名字重复
+model = DB_Relationship
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = true
+#JavaBean文件的名字
+JavaBeanName = XRelationship
+
+[LOG_道具数量修改(服务器)-(log_item_change)]
+#EXCEL 文件名
+sheetFiles = ..\..\策划表单\《西游》服务器LOG表.xls
+#关键字行，从上往下数，从0开始
+keyRow = 2
+#EXCEL 中需要导出的表的名字列表，如果导出多个用“,”半角逗号分隔
+sheetClient = 修改数量
+#EXCEL 中需要导出的表在数据库中的名字列表，如果导出多个用“,”半角逗号分隔，需要跟sheetClient数量一致
+table = log_item_change
+#导出的DB文件名字
+dbName = log_item_change.db
+#导出类的名字，不要跟其他的名字重复
+model = XItemchange
+#是否导出到数据库
+exportServer = true
+#是否导出为客户端文件
+exportClient = false
+#是否产生服务器使用的Bean文件
+javaBean	 = false
+#JavaBean文件的名字
+JavaBeanName = LogItemChange

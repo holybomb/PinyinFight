@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <!-- 
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.141.89:3306/huntergame?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"/>
+        <property name="username" value="root"/>
+        <property name="password" value="xuyuanming"/>
+        <property name="poolPingEnabled" value="true"/>
+        <property name="poolPingQuery" value="select 1"/>
+        <property name="poolPingConnectionsNotUsedFor" value="3600000"/>
+        <property name="poolMaximumActiveConnections" value="20"/>
+        <property name="poolMaximumIdleConnections" value="4"/>
+        <property name="poolTimeToWait" value="6000"></property>
+      </dataSource>
+      -->
+      <!--  c3p0 data source -->
+      <dataSource type="com.gc.game.dao.C3P0DataSourceFactory">
+        <!-- 更多c3p0 配置参数http://www.mchange.com/projects/c3p0/index.html#configuration_properties-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.141.89:3306/huntergame?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value="xuyuanming"/>
+        <property name="initialPoolSize" value="5"/>
+        <property name="maxPoolSize" value="20"/>
+        <property name="minPoolSize" value="5"/>
+        <property name="acquireIncrement" value="5"/>
+        <!--当连接池用完时客户端调用getConnection()后等待获取新连接的时间，超时后将抛出	SQLException,如设为0则无限期等待。单位毫秒。Default: 0 -->
+        <property name="checkoutTimeout" value="3000"/>
+        <property name="maxIdleTime" value="30"/>
+        <property name="maxIdleTimeExcessConnections" value="1200"/>
+        <property name="maxConnectionAge" value="27000"/>
+        <property name="maxStatements" value="1000"/>
+        <property name="maxStatementsPerConnection" value="50"/>
+        <!--c3p0是异步操作的，缓慢的JDBC操作通过帮助进程完成。扩展这些操作可以有效的提升性能通过多线程实现多个操作同时被执行。Default: 3-->
+        <property name="numHelperThreads" value="3"/>
+        <property name="preferredTestQuery" value="SELECT 1"/>
+        <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="idleConnectionTestPeriod" value="60"/>
+        <!--如果设为true那么在取得连接的同时将校验连接的有效性。Default: false -->
+        <property name="testConnectionOnCheckin" value="true"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="com/gc/game/dao/xml/DZixiaBeidongMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DNeidanMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DGuildSkillMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DGuildSettingMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DNpcMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DDungeonMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DShopMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEquipMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DDrugMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMaterialMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DTreasureMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DFormulationMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DGemMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DGuaMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DResourceConsumeMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DVIPSettingMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DGuaSettingMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DSystemSettingMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DLevelMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DAttributeRatioMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DWarriorMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DAssassinMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DWizardMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TGuildMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TGuildPlayerMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPackMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPackGemMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPackGuaMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPlayerMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TBodyEquipMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TBodyGuaMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TAttributeReviseMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TBodyNeidanMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TFinishDungeonMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/LogItemChangeMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DQuestMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DShopGoodsMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TShopStockMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DShopMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonsterMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DPlayerSkillMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonsterSkillMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DHeroStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DHeroActorMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TSaveQuestMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DDungeonDropMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TTempGuaMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TRelationshipMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/LogChatMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMapMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TGuildMsgMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonsterResourceMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DNeidanAddMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPlayerSkillMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DSkillMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonster1Mapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyThrowStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyBossStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyFlyStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyTianjiangStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyGuitouStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DEnemyGearStateMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DBulletMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/TPackMaterialMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DFormulaMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonsterDataPublicMapper.xml"/>
+    <mapper resource="com/gc/game/dao/xml/DMonsterDataMapper.xml"/>
+  </mappers>
+</configuration>

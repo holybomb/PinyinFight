@@ -1,0 +1,5 @@
+xcopy .\erl\*.erl D:\Project\cocos2d\server\erlang\hunter\src\data\ /y
+
+xcopy .\erl\*.hrl D:\Project\cocos2d\server\erlang\hunter\include\ /y
+
+pause

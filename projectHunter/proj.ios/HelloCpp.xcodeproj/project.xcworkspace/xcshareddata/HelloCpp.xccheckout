@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CBC66709-24C5-4914-8661-5D1973CC9FD9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloCpp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>996B6B7B-2397-4B29-87B2-8B4393AE9530</key>
+		<string>https://172.16.2.88/svn/nextgame</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>game/trunk/Hunter/projectHunter/proj.ios/HelloCpp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>996B6B7B-2397-4B29-87B2-8B4393AE9530</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>996B6B7B-2397-4B29-87B2-8B4393AE9530</key>
+		<string>https://172.16.2.88/svn/nextgame</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://172.16.2.88/svn/nextgame/game/trunk/Hunter/projectHunter/proj.ios/HelloCpp.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>996B6B7B-2397-4B29-87B2-8B4393AE9530</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>996B6B7B-2397-4B29-87B2-8B4393AE9530</string>
+			<key>IDESourceControlWCCName</key>
+			<string>nextgame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

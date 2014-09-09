@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Classes\PinyinFight">
+      <UniqueIdentifier>{7c06c0cc-475a-40e5-b8a5-f7b3c94c4ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PinyinFight\scenes">
+      <UniqueIdentifier>{b3e4aab2-564c-4ed0-b1e4-b33e73f11948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PinyinFight\layers">
+      <UniqueIdentifier>{e8447ce0-0665-4267-a9d4-907381031be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\scenes">
+      <UniqueIdentifier>{a23ec817-38cd-437d-9356-351f9c377cac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\scenes\gameBaseScene">
+      <UniqueIdentifier>{1ee50efb-28ca-42ad-bd50-9469f50697dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI">
+      <UniqueIdentifier>{f61d2da2-191b-4c4b-97da-903d025b0dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI\base">
+      <UniqueIdentifier>{394a25cf-77e4-4324-b6ff-f210d7b507f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI\base\check_box">
+      <UniqueIdentifier>{84613842-bc8d-43d2-be89-256ab6e0e520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Database">
+      <UniqueIdentifier>{ec2a0c8f-246f-40ab-b538-0d9b5d21bfd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Database\base">
+      <UniqueIdentifier>{238ae926-29a2-4308-af26-3ef2bb72b7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\include">
+      <UniqueIdentifier>{d88a2bf5-cfb0-4800-8073-f7c445e10ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\shaderProgram">
+      <UniqueIdentifier>{e9658aa6-c6dd-4d7c-9f7e-f781aa06bc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI\public">
+      <UniqueIdentifier>{cb40053b-ba74-4908-a139-16c4e0031cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CSystem">
+      <UniqueIdentifier>{569f41ca-19cc-4dd8-a349-e3902579d451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils">
+      <UniqueIdentifier>{4cc44131-2947-411d-98e8-c166a3fd6ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils\ccsplayer">
+      <UniqueIdentifier>{753c2f46-9c9e-4b57-b2b1-d337406f4b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI\base\util">
+      <UniqueIdentifier>{b97ead89-2369-4aee-b954-543ce3a3e7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PinyinFight\actor">
+      <UniqueIdentifier>{eb2b693a-9491-4c54-88f6-89619778da11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PinyinFight\layer\GamePan.cpp">
+      <Filter>Classes\PinyinFight\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\textConvert.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Utils.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\VisibleRect.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\ccsplayer\CCSPlayer.cpp">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\ccsplayer\CCSPlayerPool.cpp">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PinyinFight\scenes\MainGameScene.cpp">
+      <Filter>Classes\PinyinFight\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\gameBaseScene\GameBaseScene.cpp">
+      <Filter>Classes\scenes\gameBaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\base\CcbBase.cpp">
+      <Filter>Classes\GUI\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\base\GUIBase.cpp">
+      <Filter>Classes\GUI\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\base\check_box\XCheckBox.cpp">
+      <Filter>Classes\GUI\base\check_box</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\testBasic.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Database\DBManager.cpp">
+      <Filter>Classes\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Database\base\DB_Text.cpp">
+      <Filter>Classes\Database\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Database\base\DB_Word.cpp">
+      <Filter>Classes\Database\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Database\base\XTipMsg.cpp">
+      <Filter>Classes\Database\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\shaderProgram\shaderNode.cpp">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\stdafx.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\public\TipGame.cpp">
+      <Filter>Classes\GUI\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CSystem\CSystem.cpp">
+      <Filter>Classes\CSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\base\util\XCCBReader.cpp">
+      <Filter>Classes\GUI\base\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PinyinFight\actor\Actor.cpp">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PinyinFight\actor\Npc.cpp">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PinyinFight\actor\Player.cpp">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\layer\GamePan.h">
+      <Filter>Classes\PinyinFight\layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\textConvert.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\TextManager.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Utils.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\VisibleRect.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\ccsplayer\CCSPlayer.h">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\ccsplayer\CCSPlayerPool.h">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\ccsplayer\CCSPlayerShader.h">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\ccsplayer\CCSPlayerShader.hpp">
+      <Filter>Classes\utils\ccsplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\scenes\MainGameScene.h">
+      <Filter>Classes\PinyinFight\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\scenes\MainGameSceneGUI.h">
+      <Filter>Classes\PinyinFight\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\scenes\MainGameSceneGUI.hpp">
+      <Filter>Classes\PinyinFight\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\gameBaseScene\GameBaseScene.h">
+      <Filter>Classes\scenes\gameBaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\gameBaseScene\GameBaseSceneGUI.h">
+      <Filter>Classes\scenes\gameBaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\gameBaseScene\GameBaseSceneGUI.hpp">
+      <Filter>Classes\scenes\gameBaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\base\CcbBase.h">
+      <Filter>Classes\GUI\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\base\GUIBase.h">
+      <Filter>Classes\GUI\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\base\GUIConfig.h">
+      <Filter>Classes\GUI\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\base\check_box\XCheckBox.h">
+      <Filter>Classes\GUI\base\check_box</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\testBasic.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\DBManager.h">
+      <Filter>Classes\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\DB_Text.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\DB_Text_const.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\DB_Word.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\DB_Word_const.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\XTipMsg.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\XTipMsg_const.h">
+      <Filter>Classes\Database\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\include\Hunter.h">
+      <Filter>Classes\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\AnimPlayerEffectDefine.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\AnimPlayerFragmentMainEnd.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\AnimPlayerFragmentMainHead.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\AnimPlayerFragmentMainMiddle.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragBaoJiShadow.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragBianse.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragBrightBian.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragDengBaiDong.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragDieJia.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragDieJiaCCS.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragGaussianBlur.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragGlow.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragGrassWave.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragGray.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragHSDY_HUXI.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragHue.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragOneColor.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragSeJie.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragShuiCao.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragShuiDouDong.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragWave.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragWaWaBaiDong.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\fragYunPingTai.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaderProgram\shaderNode.h">
+      <Filter>Classes\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\stdafx.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\defines.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\public\TipGame.h">
+      <Filter>Classes\GUI\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CSystem\CSystem.h">
+      <Filter>Classes\CSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\base\util\XCCBReader.h">
+      <Filter>Classes\GUI\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\actor\Actor.h">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\actor\Npc.h">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PinyinFight\actor\Player.h">
+      <Filter>Classes\PinyinFight\actor</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

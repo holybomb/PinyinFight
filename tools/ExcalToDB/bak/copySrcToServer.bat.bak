@@ -1,0 +1,19 @@
+@echo off
+
+ECHO *************************************************
+ECHO *                                               *
+ECHO *           复制数据库文件到对应目录            *    
+ECHO *                                               *
+
+ECHO *             开始复制model文件                 *
+xcopy .\src\com\gc\hunter\dao\model\*.java ..\..\..\..\..\server\src\RSPServer_new\src\com\gc\hunter\dao\model\ /y >>nul
+
+ECHO *            开始复制sqlmapper文件              *
+xcopy .\src\com\gc\hunter\dao\sqlmapper\*.java ..\..\..\..\..\server\src\RSPServer_new\src\com\gc\hunter\dao\sqlmapper\ /y >>nul
+
+ECHO *               开始复制xml文件                 *
+xcopy .\src\com\gc\hunter\dao\xml\*.xml ..\..\..\..\..\server\src\RSPServer_new\src\com\gc\hunter\dao\xml\ /y >>nul
+
+ECHO *************************************************
+
+pause

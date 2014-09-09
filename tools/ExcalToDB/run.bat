@@ -1,0 +1,2 @@
+@echo off
+java -Xms256M  -Xmx1024M -cp ".\lib\sqlite-jdbc-3.7.2.jar;.\lib\commons-beanutils-1.7.0.jar;.\lib\commons-collections-3.1.jar;.\lib\commons-lang-2.6.jar;.\lib\commons-logging-1.0.4.jar;.\lib\ezmorph-1.0.3.jar;.\lib\json-lib-2.4-jdk15.jar;.\lib\jxl.jar;.\lib\mybatis-3.2.3-SNAPSHOT.jar;.\lib\mybatis-generator-core-1.3.2.jar;.\lib\mysql-connector-java-5.1.13-bin.jar;.\lib\dom4j-1.6.1.jar;.\dist\ExcalToDB.jar" com.gc.hunter.MainFrame 

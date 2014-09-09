@@ -1,0 +1,335 @@
+%%%----------------------------------- 
+%%% @Module  : data_levelinfo 
+%%% @Author  : YANG.JIN 
+%%% @Email   : 84959751@qq.com 
+%%% @Created : 2013-9-2 15:59:21 
+%%% @Description: 自动生成 
+%%%----------------------------------- 
+-module(data_levelinfo). 
+-export([get/1]). 
+-include("record.hrl"). 
+ 
+get(1)-> 
+#data_levelinfo{ 
+	id=1,levelup_exp=240 
+}; 
+get(2)-> 
+#data_levelinfo{ 
+	id=2,levelup_exp=280 
+}; 
+get(3)-> 
+#data_levelinfo{ 
+	id=3,levelup_exp=340 
+}; 
+get(4)-> 
+#data_levelinfo{ 
+	id=4,levelup_exp=400 
+}; 
+get(5)-> 
+#data_levelinfo{ 
+	id=5,levelup_exp=640 
+}; 
+get(6)-> 
+#data_levelinfo{ 
+	id=6,levelup_exp=746 
+}; 
+get(7)-> 
+#data_levelinfo{ 
+	id=7,levelup_exp=1100 
+}; 
+get(8)-> 
+#data_levelinfo{ 
+	id=8,levelup_exp=1520 
+}; 
+get(9)-> 
+#data_levelinfo{ 
+	id=9,levelup_exp=2346 
+}; 
+get(10)-> 
+#data_levelinfo{ 
+	id=10,levelup_exp=3332 
+}; 
+get(11)-> 
+#data_levelinfo{ 
+	id=11,levelup_exp=4560 
+}; 
+get(12)-> 
+#data_levelinfo{ 
+	id=12,levelup_exp=5972 
+}; 
+get(13)-> 
+#data_levelinfo{ 
+	id=13,levelup_exp=7680 
+}; 
+get(14)-> 
+#data_levelinfo{ 
+	id=14,levelup_exp=10132 
+}; 
+get(15)-> 
+#data_levelinfo{ 
+	id=15,levelup_exp=13646 
+}; 
+get(16)-> 
+#data_levelinfo{ 
+	id=16,levelup_exp=17820 
+}; 
+get(17)-> 
+#data_levelinfo{ 
+	id=17,levelup_exp=22526 
+}; 
+get(18)-> 
+#data_levelinfo{ 
+	id=18,levelup_exp=28000 
+}; 
+get(19)-> 
+#data_levelinfo{ 
+	id=19,levelup_exp=34932 
+}; 
+get(20)-> 
+#data_levelinfo{ 
+	id=20,levelup_exp=43852 
+}; 
+get(21)-> 
+#data_levelinfo{ 
+	id=21,levelup_exp=52700 
+}; 
+get(22)-> 
+#data_levelinfo{ 
+	id=22,levelup_exp=64960 
+}; 
+get(23)-> 
+#data_levelinfo{ 
+	id=23,levelup_exp=77652 
+}; 
+get(24)-> 
+#data_levelinfo{ 
+	id=24,levelup_exp=94080 
+}; 
+get(25)-> 
+#data_levelinfo{ 
+	id=25,levelup_exp=111126 
+}; 
+get(26)-> 
+#data_levelinfo{ 
+	id=26,levelup_exp=132586 
+}; 
+get(27)-> 
+#data_levelinfo{ 
+	id=27,levelup_exp=154880 
+}; 
+get(28)-> 
+#data_levelinfo{ 
+	id=28,levelup_exp=181300 
+}; 
+get(29)-> 
+#data_levelinfo{ 
+	id=29,levelup_exp=211600 
+}; 
+get(30)-> 
+#data_levelinfo{ 
+	id=30,levelup_exp=246960 
+}; 
+get(31)-> 
+#data_levelinfo{ 
+	id=31,levelup_exp=283786 
+}; 
+get(32)-> 
+#data_levelinfo{ 
+	id=32,levelup_exp=327572 
+}; 
+get(33)-> 
+#data_levelinfo{ 
+	id=33,levelup_exp=375466 
+}; 
+get(34)-> 
+#data_levelinfo{ 
+	id=34,levelup_exp=426560 
+}; 
+get(35)-> 
+#data_levelinfo{ 
+	id=35,levelup_exp=487320 
+}; 
+get(36)-> 
+#data_levelinfo{ 
+	id=36,levelup_exp=550566 
+}; 
+get(37)-> 
+#data_levelinfo{ 
+	id=37,levelup_exp=623452 
+}; 
+get(38)-> 
+#data_levelinfo{ 
+	id=38,levelup_exp=702266 
+}; 
+get(39)-> 
+#data_levelinfo{ 
+	id=39,levelup_exp=787306 
+}; 
+get(40)-> 
+#data_levelinfo{ 
+	id=40,levelup_exp=883920 
+}; 
+get(41)-> 
+#data_levelinfo{ 
+	id=41,levelup_exp=984272 
+}; 
+get(42)-> 
+#data_levelinfo{ 
+	id=42,levelup_exp=1099366 
+}; 
+get(43)-> 
+#data_levelinfo{ 
+	id=43,levelup_exp=1220700 
+}; 
+get(44)-> 
+#data_levelinfo{ 
+	id=44,levelup_exp=1354560 
+}; 
+get(45)-> 
+#data_levelinfo{ 
+	id=45,levelup_exp=1501866 
+}; 
+get(46)-> 
+#data_levelinfo{ 
+	id=46,levelup_exp=1656640 
+}; 
+get(47)-> 
+#data_levelinfo{ 
+	id=47,levelup_exp=1826140 
+}; 
+get(48)-> 
+#data_levelinfo{ 
+	id=48,levelup_exp=2011366 
+}; 
+get(49)-> 
+#data_levelinfo{ 
+	id=49,levelup_exp=2210440 
+}; 
+get(50)-> 
+#data_levelinfo{ 
+	id=50,levelup_exp=2421786 
+}; 
+get(51)-> 
+#data_levelinfo{ 
+	id=51,levelup_exp=2651332 
+}; 
+get(52)-> 
+#data_levelinfo{ 
+	id=52,levelup_exp=2900200 
+}; 
+get(53)-> 
+#data_levelinfo{ 
+	id=53,levelup_exp=3165972 
+}; 
+get(54)-> 
+#data_levelinfo{ 
+	id=54,levelup_exp=3446932 
+}; 
+get(55)-> 
+#data_levelinfo{ 
+	id=55,levelup_exp=3756332 
+}; 
+get(56)-> 
+#data_levelinfo{ 
+	id=56,levelup_exp=4078800 
+}; 
+get(57)-> 
+#data_levelinfo{ 
+	id=57,levelup_exp=4425480 
+}; 
+get(58)-> 
+#data_levelinfo{ 
+	id=58,levelup_exp=4797672 
+}; 
+get(59)-> 
+#data_levelinfo{ 
+	id=59,levelup_exp=5196720 
+}; 
+get(60)-> 
+#data_levelinfo{ 
+	id=60,levelup_exp=5611473 
+}; 
+get(61)-> 
+#data_levelinfo{ 
+	id=61,levelup_exp=6260773 
+}; 
+get(62)-> 
+#data_levelinfo{ 
+	id=62,levelup_exp=6544720 
+}; 
+get(63)-> 
+#data_levelinfo{ 
+	id=63,levelup_exp=7050400 
+}; 
+get(64)-> 
+#data_levelinfo{ 
+	id=64,levelup_exp=7592000 
+}; 
+get(65)-> 
+#data_levelinfo{ 
+	id=65,levelup_exp=8159360 
+}; 
+get(66)-> 
+#data_levelinfo{ 
+	id=66,levelup_exp=8771666 
+}; 
+get(67)-> 
+#data_levelinfo{ 
+	id=67,levelup_exp=9421873 
+}; 
+get(68)-> 
+#data_levelinfo{ 
+	id=68,levelup_exp=10094960 
+}; 
+get(69)-> 
+#data_levelinfo{ 
+	id=69,levelup_exp=10818280 
+}; 
+get(70)-> 
+#data_levelinfo{ 
+	id=70,levelup_exp=11584026 
+}; 
+get(71)-> 
+#data_levelinfo{ 
+	id=71,levelup_exp=12393960 
+}; 
+get(72)-> 
+#data_levelinfo{ 
+	id=72,levelup_exp=13249880 
+}; 
+get(73)-> 
+#data_levelinfo{ 
+	id=73,levelup_exp=14145340 
+}; 
+get(74)-> 
+#data_levelinfo{ 
+	id=74,levelup_exp=15101600 
+}; 
+get(75)-> 
+#data_levelinfo{ 
+	id=75,levelup_exp=16097480 
+}; 
+get(76)-> 
+#data_levelinfo{ 
+	id=76,levelup_exp=17158680 
+}; 
+get(77)-> 
+#data_levelinfo{ 
+	id=77,levelup_exp=18275493 
+}; 
+get(78)-> 
+#data_levelinfo{ 
+	id=78,levelup_exp=19453120 
+}; 
+get(79)-> 
+#data_levelinfo{ 
+	id=79,levelup_exp=20690493 
+}; 
+get(80)-> 
+#data_levelinfo{ 
+	id=80,levelup_exp=21989733 
+}; 
+ 
+ 
+get(_Id) -> 
+[]. 
