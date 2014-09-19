@@ -229,3 +229,11 @@ string DBManager::getString(int ID)
 	CCDictionary* dic = (CCDictionary*)m_pDBCache->objectForKey(kDBTypeText);
 	return (dynamic_cast<DB_Text*>(dic->objectForKey(ID)))->sch; 
 }
+
+DB_Actor* DBManager::getActor(int ID)
+{
+	GET_DB_MAP(DB_Actor, kDBTypeActor);
+	CCDictionary* dic = (CCDictionary*)m_pDBCache->objectForKey(kDBTypeActor);
+	DB_Actor* word = dynamic_cast<DB_Actor*>(dic->objectForKey(ID));
+	return word;
+}

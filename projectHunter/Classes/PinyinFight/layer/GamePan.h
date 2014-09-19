@@ -1,4 +1,5 @@
 #include "../../GUI/base/GUIBase.h"
+#include "Database/base/DB_Actor.h"
 #ifndef __GAMEPAN_H__
 #define __GAMEPAN_H__
 
@@ -36,6 +37,9 @@ public:
 	void showResult();
 	void hideResult();
 	void ResultBtnCallBack(CCObject* pSender);
+
+	void addNpc(DB_Actor* pActor);
+	void addPlayer(DB_Actor* pActor);
 	bool _isPlayer;
 	static std::string _answerStr;
 private:

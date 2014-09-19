@@ -42,7 +42,8 @@ then
     done
 fi
 # path
-NDK_ROOT="/tools/android-ndk-r9c"
+#NDK_ROOT="/tools/android-ndk-r9c"
+#NDK_ROOT="/tools/android-ndk-r9c"
 if [ -z "${NDK_ROOT+aaa}" ];then
 echo "please define NDK_ROOT"
 exit 1

@@ -9,6 +9,7 @@
 #include "cocos2d.h"
 #include "base/XTipMsg.h"
 #include "base/DB_Text.h"
+#include "base/DB_Actor.h"
 
 
 enum kDBType
@@ -17,6 +18,7 @@ enum kDBType
 	kDBTypeTipMsg,				// 系统提示
 	kDBTypeText,				// 文本
 	kDBTypeWord,				// 成语
+	kDBTypeActor,				// 角色
 	kDBTypeMax,
 };
 
@@ -43,6 +45,7 @@ public:
 	std::string getRandomWord();
 	std::string getRandomWordByLetter(string Letter,string pWord);
 	std::string checkWordExist(std::string pWord);
+	DB_Actor* getActor(int ID);
 private:
 	cocos2d::CCDictionary* m_pDBCache;				// DB Cache
 	cocos2d::CCDictionary* m_pDBCacheState;				// DB Cache

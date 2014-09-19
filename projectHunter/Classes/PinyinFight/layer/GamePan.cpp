@@ -6,6 +6,8 @@
 #include "../../shaderProgram/shaderNode.h"
 #include "../../GUI/base/check_box/XCheckBox.h"
 #include "../scenes/MainGameScene.h"
+#include "../actor/Npc.h"
+#include "../actor/Player.h"
 
 USING_NS_CC;
 
@@ -594,4 +596,22 @@ void GamePan::updateTimer(float delta)
 	CCLabelBMFont* timerTxt = dynamic_cast<CCLabelBMFont*>(pBaseNode->getChildByTag(kTagGamePanBgTimer));
 	int timeStr = (int)_curTime;
 	timerTxt->setString(Utils::itos(timeStr).c_str());
+}
+
+void GamePan::addNpc(DB_Actor* pActor)
+{
+	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanOpp);
+	pBaseNode->removeAllChildren();
+	Npc* npc = Npc::create();
+	npc->loadCCB(pBaseNode,("scene/actor/"+pActor->resource).c_str());
+	pBaseNode->addChild(npc);
+}
+
+void GamePan::addPlayer(DB_Actor* pActor)
+{
+	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanSelf);
+	pBaseNode->removeAllChildren();
+	Player* player = Player::create();
+	player->loadCCB(pBaseNode,("scene/actor/"+pActor->resource).c_str());
+	pBaseNode->addChild(player);
 }

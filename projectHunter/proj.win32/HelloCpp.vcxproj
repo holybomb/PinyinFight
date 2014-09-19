@@ -131,6 +131,7 @@
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\CSystem\CSystem.cpp" />
+    <ClCompile Include="..\Classes\Database\base\DB_Actor.cpp" />
     <ClCompile Include="..\Classes\Database\base\DB_Text.cpp" />
     <ClCompile Include="..\Classes\Database\base\DB_Word.cpp" />
     <ClCompile Include="..\Classes\Database\base\XTipMsg.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\CSystem\CSystem.h" />
+    <ClInclude Include="..\Classes\Database\base\DB_Actor.h" />
     <ClInclude Include="..\Classes\Database\base\DB_Text.h" />
     <ClInclude Include="..\Classes\Database\base\DB_Text_const.h" />
     <ClInclude Include="..\Classes\Database\base\DB_Word.h" />

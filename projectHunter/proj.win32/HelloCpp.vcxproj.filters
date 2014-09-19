@@ -143,6 +143,9 @@
     <ClCompile Include="..\Classes\PinyinFight\actor\Player.cpp">
       <Filter>Classes\PinyinFight\actor</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Database\base\DB_Actor.cpp">
+      <Filter>Classes\Database\base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h">
@@ -333,6 +336,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\PinyinFight\actor\Player.h">
       <Filter>Classes\PinyinFight\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Database\base\DB_Actor.h">
+      <Filter>Classes\Database\base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
