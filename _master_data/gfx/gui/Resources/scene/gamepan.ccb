@@ -1733,13 +1733,13 @@
 								<array>
 									<dict>
 										<key>baseClass</key>
-										<string>CCSprite</string>
+										<string>CCNode</string>
 										<key>children</key>
 										<array/>
 										<key>customClass</key>
 										<string></string>
 										<key>displayName</key>
-										<string>opp_01</string>
+										<string>CCNode</string>
 										<key>memberVarAssignmentName</key>
 										<string></string>
 										<key>memberVarAssignmentType</key>
@@ -1753,8 +1753,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>-17.319948196411133</real>
-													<real>337.880126953125</real>
+													<real>0.0</real>
+													<real>337</real>
 													<integer>0</integer>
 												</array>
 											</dict>
@@ -1765,8 +1765,8 @@
 												<string>Point</string>
 												<key>value</key>
 												<array>
-													<real>0.5</real>
-													<real>0.5</real>
+													<real>0.0</real>
+													<real>0.0</real>
 												</array>
 											</dict>
 											<dict>
@@ -1784,14 +1784,6 @@
 											</dict>
 											<dict>
 												<key>name</key>
-												<string>rotation</string>
-												<key>type</key>
-												<string>Degrees</string>
-												<key>value</key>
-												<real>180</real>
-											</dict>
-											<dict>
-												<key>name</key>
 												<string>tag</string>
 												<key>type</key>
 												<string>Integer</string>
@@ -1805,17 +1797,6 @@
 												<string>Check</string>
 												<key>value</key>
 												<false/>
-											</dict>
-											<dict>
-												<key>name</key>
-												<string>displayFrame</string>
-												<key>type</key>
-												<string>SpriteFrame</string>
-												<key>value</key>
-												<array>
-													<string>plist/gamepad.plist</string>
-													<string>chuan.png</string>
-												</array>
 											</dict>
 										</array>
 									</dict>
@@ -1891,13 +1872,13 @@
 								<array>
 									<dict>
 										<key>baseClass</key>
-										<string>CCSprite</string>
+										<string>CCNode</string>
 										<key>children</key>
 										<array/>
 										<key>customClass</key>
 										<string></string>
 										<key>displayName</key>
-										<string>wo_01</string>
+										<string>CCNode</string>
 										<key>memberVarAssignmentName</key>
 										<string></string>
 										<key>memberVarAssignmentType</key>
@@ -1911,8 +1892,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>-0.03994441032409668</real>
-													<real>-245.32000732421875</real>
+													<real>0.0</real>
+													<real>-245</real>
 													<integer>0</integer>
 												</array>
 											</dict>
@@ -1923,8 +1904,8 @@
 												<string>Point</string>
 												<key>value</key>
 												<array>
-													<real>0.5</real>
-													<real>0.5</real>
+													<real>0.0</real>
+													<real>0.0</real>
 												</array>
 											</dict>
 											<dict>
@@ -1955,17 +1936,6 @@
 												<string>Check</string>
 												<key>value</key>
 												<false/>
-											</dict>
-											<dict>
-												<key>name</key>
-												<string>displayFrame</string>
-												<key>type</key>
-												<string>SpriteFrame</string>
-												<key>value</key>
-												<array>
-													<string>plist/gamepad.plist</string>
-													<string>chuan.png</string>
-												</array>
 											</dict>
 										</array>
 									</dict>
@@ -3638,6 +3608,18 @@
 										<string>Check</string>
 										<key>value</key>
 										<false/>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>position</string>
+										<key>type</key>
+										<string>Position</string>
+										<key>value</key>
+										<array>
+											<real>0.0</real>
+											<real>3.583181619644165</real>
+											<integer>0</integer>
+										</array>
 									</dict>
 									<dict>
 										<key>name</key>
