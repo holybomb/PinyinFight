@@ -14,6 +14,7 @@ Actor::~Actor(void)
 void Actor::doOpen()
 {
 	GUIBase::doOpen();
+	setContentSize(m_pCcbNode->getContentSize());
 	scheduleUpdate();
 }
 

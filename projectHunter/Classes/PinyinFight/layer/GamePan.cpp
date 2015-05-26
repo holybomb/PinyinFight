@@ -89,6 +89,8 @@ void GamePan::doOpen()
 	GUIBase::doOpen();
 	isCheckWin=false;
 	_isPlayer = true;
+	addNpc(DBManager::sharedDBManager()->getActor(1));
+	addPlayer(DBManager::sharedDBManager()->getActor(2));
 	initWordList();
 	refreshWorldPad();
 	showHideConfirmPad(false);
@@ -600,18 +602,22 @@ void GamePan::updateTimer(float delta)
 
 void GamePan::addNpc(DB_Actor* pActor)
 {
-	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanOpp);
+	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanOpp)->getChildByTag(0);
 	pBaseNode->removeAllChildren();
 	Npc* npc = Npc::create();
 	npc->loadCCB(pBaseNode,("scene/actor/"+pActor->resource).c_str());
 	pBaseNode->addChild(npc);
+	npc->doOpen();
+	npc->setPosition(CCPointZero-(npc->getContentSize()/2));
 }
 
 void GamePan::addPlayer(DB_Actor* pActor)
 {
-	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanSelf);
+	CCNode* pBaseNode = m_pCcbNode->getChildByTag(kTagGamePanSelf)->getChildByTag(0);
 	pBaseNode->removeAllChildren();
 	Player* player = Player::create();
 	player->loadCCB(pBaseNode,("scene/actor/"+pActor->resource).c_str());
 	pBaseNode->addChild(player);
+	player->doOpen();
+	player->setPosition(CCPointZero-(player->getContentSize()/2));
 }
